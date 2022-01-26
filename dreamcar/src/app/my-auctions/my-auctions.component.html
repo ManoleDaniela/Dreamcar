@@ -1,0 +1,24 @@
+
+<div align="center"><h1>My auctions</h1></div>
+
+
+
+<div>
+    <table class="table" style="width: 80%">
+      <tr>
+        <th>Component</th>
+        <th>Bid Price</th>
+        <th> </th>
+      </tr>
+      <tr *ngFor="let bid of bids">
+        <td>
+          {{bid.componentName}}
+        </td>
+        <td>
+          {{bid.bidPrice}}
+        </td>
+       
+      </tr>
+    </table>
+    
+  </div>
